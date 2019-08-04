@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/front_view"
+    tools:context="com.example.biplabroy.airreservation.StatusActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration Successful"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#9eea19"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        style="@style/textview"
+        android:id="@+id/name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: "
+        android:textSize="20dp"
+        style="@style/textview"
+        android:id="@+id/phone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Journey: "
+        android:textSize="20dp"
+        style="@style/textview"
+        android:id="@+id/journey"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price: "
+        android:textSize="20dp"
+        style="@style/textview"
+        android:id="@+id/price"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Seats: "
+        android:textSize="20dp"
+        style="@style/textview"
+        android:id="@+id/not"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:textSize="20dp"
+        style="@style/textview"
+        android:id="@+id/date"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: "
+        android:textSize="20dp"
+        style="@style/textview"
+        android:id="@+id/time"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="30dp">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edit"
+            android:text="cancle tickets"
+            style="@style/button"
+            android:layout_marginBottom="10dp"
+            android:onClick="delete"
+            android:id="@+id/delete"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/logout"
+            android:text="Edit"
+            style="@style/button"
+            android:layout_marginBottom="10dp"
+            android:onClick="edit"
+            android:id="@+id/edit"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="LOG OUT"
+            style="@style/button"
+            android:id="@+id/logout"
+            android:onClick="logout"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

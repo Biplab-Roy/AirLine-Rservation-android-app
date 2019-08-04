@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/open_plane"
+    tools:context="com.example.biplabroy.airreservation.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome to Airline Reservation"
+        android:textSize="25dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tv"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flights List"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/register"
+        android:layout_above="@+id/admin"
+        android:layout_alignRight="@+id/register"
+        style="@style/button"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/fl_list"
+        android:onClick="fl_list"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="admin"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/register"
+        android:layout_above="@+id/register"
+        android:layout_alignRight="@+id/register"
+        style="@style/button"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/admin"
+        android:onClick="admin"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="register"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        style = "@style/button"
+        android:id="@+id/register"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="status"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/register"
+        android:layout_below="@+id/register"
+        android:layout_alignRight="@+id/register"
+        style="@style/button"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/status"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Ticket"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/register"
+        android:layout_below="@+id/status"
+        android:layout_alignRight="@+id/register"
+        style="@style/button"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/gentk"
+        android:onClick="genarateQR"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="exit"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/register"
+        android:layout_below="@+id/gentk"
+        android:layout_alignRight="@+id/register"
+        style="@style/button"
+        android:layout_marginTop="10dp"
+        android:id="@+id/exit"
+        android:onClick="exit"
+        />
+
+</RelativeLayout>

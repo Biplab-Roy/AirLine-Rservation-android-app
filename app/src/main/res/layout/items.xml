@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.example.biplabroy.airreservation.OwnAdapter">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_call_black_24dp"
+        android:layout_alignTop="@+id/dat"
+        android:layout_alignBottom="@+id/detail"
+        android:id="@+id/iv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Sanjay"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:id="@+id/tvname"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="8013614797"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/tvname"
+        android:layout_marginTop="5dp"
+        android:textColor="#ff5005"
+        android:id="@+id/tvphone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvname"
+        android:layout_alignBottom="@+id/tvname"
+        android:text="12/12/2019 | 9.00AM"
+        android:layout_toLeftOf="@+id/iv"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/dat"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvphone"
+        android:text="from Kolkata to Dehli \n 3 tickets 5000/- per head"
+        android:layout_toLeftOf="@+id/iv"
+        android:textColor="#000000"
+        android:textAlignment="viewEnd"
+        android:textSize="10dp"
+        android:id="@+id/detail"
+        android:layout_marginLeft="5dp"
+        />
+
+</RelativeLayout>
